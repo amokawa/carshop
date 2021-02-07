@@ -22,6 +22,41 @@ public class Car {
     @NotNull(message = "Campo obrigatório")
     private Float price;
 
-    private LocalDate createdAt = LocalDate.now();
+    private final LocalDate createdAt = LocalDate.now();
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
+    }
+
+    public LocalDate getCreatedAt() {
+        return createdAt;
+    }
 }
